@@ -1,0 +1,117 @@
+/* Inclui bordas e espaçamentos no tamanho total dos elementos. */
+* {
+    box-sizing: border-box;
+}
+
+/* Define o estilo geral da página e remove a margem padrão. */
+body {
+    margin: 0;
+    background: #f7e5c1;
+    color: #33251d;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estiliza o cabeçalho com fundo vermelho e texto centralizado. */
+header {
+    padding: clamp(1.25rem, 5vw, 2rem) 1rem;
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+/* Ajusta o título principal dentro do cabeçalho. */
+header h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* Organiza os links e permite que o menu quebre em linhas. */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Dá espaçamento e área de toque aos links do menu. */
+nav a {
+    display: inline-block;
+    padding: 0.55rem 0.85rem;
+    border-radius: 4px;
+    color: white;
+    line-height: 1.3;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: #8b171b;
+}
+
+/* Mantém o link do rodapé legível no fundo vermelho. */
+footer a {
+    color: white;
+}
+
+/* Centraliza e limita a largura do conteúdo principal. */
+main {
+    width: min(100% - 2rem, 900px);
+    margin: 2rem auto;
+}
+
+/* Cria cartões simples para separar as seções. */
+section {
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #dfc79e;
+    border-radius: 8px;
+    background: #fffaf0;
+}
+
+/* Destaca os títulos das seções. */
+h2 {
+    color: red;
+}
+
+/* Ajusta o tamanho e a aparência da imagem de apresentação. */
+.imagem-destaque {
+    display: block;
+    width: min(100%, 600px);
+    margin: 1rem auto;
+    border: 2px solid #dfc79e;
+    border-radius: 8px;
+}
+
+/* Destaca o rodapé com fundo vermelho. */
+footer {
+    padding: 1.5rem 1rem;
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+/* Mantém o título do rodapé legível no fundo vermelho. */
+footer h2 {
+    color: white;
+}
+
+footer p {
+    margin: 0.5rem auto;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+    nav a {
+        flex: 1 1 40%;
+        max-width: 180px;
+        padding: 0.65rem 0.4rem;
+    }
+
+    footer {
+        padding: 1.25rem 1rem;
+    }
+}

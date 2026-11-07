@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configura idioma, codificação, visualização móvel e estilo da página. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Uaistival</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho do evento e menu para acessar as cinco páginas. -->
+    <header>
+        <h1>Uaistival</h1>
+        <nav aria-label="Navegação principal">
+            <a href="../exercicio1/index.html">Início</a>
+            <a href="../exercicio2/index.html">Cadastro</a>
+            <a href="index.html" aria-current="page">Cardápio</a>
+            <a href="../exercicio4/index.html">Galeria</a>
+            <a href="../exercicio5/index.html">Evento</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo do cardápio organizado em uma tabela de preços. -->
+    <main>
+        <h2>Comidas típicas de Minas Gerais</h2>
+        <p>De 2 a 6 de dezembro, o UAISTIVAL celebra Minas Gerais também pelos sabores da nossa terra. Confira a gastronomia típica e os preços ilustrativos das porções.</p>
+        <!-- Permite rolar a tabela horizontalmente em telas pequenas. -->
+        <div class="rolagem" role="region" aria-label="Tabela de preços; role para os lados em telas pequenas" tabindex="0">
+            <table id="cardapio">
+                <!-- Identifica o conteúdo e organiza os títulos das colunas. -->
+                <caption>Cardápio e preços do Uaistival</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Comida</th>
+                        <th scope="col">Porção</th>
+                        <th scope="col">Preço</th>
+                    </tr>
+                </thead>
+                <!-- Lista os pratos, categorias, porções e preços. -->
+                <tbody>
+                    <tr><td>Quitanda</td><th scope="row">Pão de queijo</th><td>6 unidades</td><td>R$ 12,00</td></tr>
+                    <tr><td>Prato principal</td><th scope="row">Feijão tropeiro</th><td>Prato individual</td><td>R$ 28,00</td></tr>
+                    <tr><td>Prato principal</td><th scope="row">Tutu à mineira</th><td>Prato individual</td><td>R$ 26,00</td></tr>
+                    <tr><td>Milho</td><th scope="row">Pamonha</th><td>1 unidade</td><td>R$ 10,00</td></tr>
+                    <tr><td>Doce mineiro</td><th scope="row">Doce de leite com queijo</th><td>1 porção</td><td>R$ 14,00</td></tr>
+                    <tr><td>Caldo</td><th scope="row">Caldo de mandioca</th><td>1 tigela</td><td>R$ 18,00</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configura o documento, a visualização móvel e a folha de estilos. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Uaistival</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho do evento e menu para acessar as cinco páginas. -->
+    <header>
+        <h1>Uaistival</h1>
+        <nav aria-label="Navegação principal">
+            <a href="../exercicio1/index.html">Início</a>
+            <a href="index.html" aria-current="page">Cadastro</a>
+            <a href="../exercicio3/index.html">Cardápio</a>
+            <a href="../exercicio4/index.html">Galeria</a>
+            <a href="../exercicio5/index.html">Evento</a>
+        </nav>
+    </header>
+
+    <!-- Área principal com apresentação e formulário de cadastro. -->
+    <main>
+        <!-- Resume o evento e convida o visitante a demonstrar interesse. -->
+        <section id="cadastro">
+            <h2>Cadastre seu interesse</h2>
+            <p>O UAISTIVAL reúne pessoas de todos os cantos do Brasil e do mundo para celebrar a cultura, a tradição e a hospitalidade mineira.</p>
+            <p>De 2 a 6 de dezembro, das 18h à meia-noite, venha aproveitar música, cultura, entretenimento e os sabores da gastronomia típica. Preencha o formulário para demonstrar seu interesse em participar.</p>
+
+            <!-- Coleta dados, dia, horário, interesses e mensagem do visitante. -->
+            <form>
+                <!-- Campos de identificação e contato. -->
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+
+                <!-- Permite escolher um dos dias do festival. -->
+                <label for="data">Dia de interesse</label>
+                <select id="data" name="data" required>
+                    <option value="">Selecione um dia</option>
+                    <option value="2">2 de dezembro</option>
+                    <option value="3">3 de dezembro</option>
+                    <option value="4">4 de dezembro</option>
+                    <option value="5">5 de dezembro</option>
+                    <option value="6">6 de dezembro</option>
+                </select>
+
+                <!-- Permite escolher apenas um horário de preferência. -->
+                <fieldset>
+                    <legend>Horário de preferência</legend>
+                    <label class="opcao"><input type="radio" name="horario" value="18-21" required> Das 18h às 20h</label>
+                    <label class="opcao"><input type="radio" name="horario" value="21-meia-noite"> Das 21h à meia-noite</label>
+                </fieldset>
+
+                <!-- Permite marcar mais de um tipo de atração. -->
+                <fieldset>
+                    <legend>O que você gostaria de conhecer?</legend>
+                    <label class="opcao"><input type="checkbox" name="interesses" value="musica"> Música regional</label>
+                    <label class="opcao"><input type="checkbox" name="interesses" value="culinaria"> Culinária mineira</label>
+                    <label class="opcao"><input type="checkbox" name="interesses" value="cultura"> Cultura e tradições</label>
+                </fieldset>
+
+                <!-- Campo livre para uma mensagem opcional. -->
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                <div class="botoes">
+                    <!-- Envia o formulário conforme sua configuração ou limpa os campos. -->
+                    <button type="submit">Enviar interesse</button>
+                    <button type="reset">Limpar formulário</button>
+                </div>
+            </form>
+
+            <!-- Explica a validação do navegador e informa que não há envio ao servidor. -->
+            <p>A validação HTML acontece no navegador e verifica campos obrigatórios e o formato do e-mail. A validação no servidor acontece após o envio e é necessária para conferir os dados recebidos com segurança. Este formulário não envia nem armazena os dados.</p>
+        </section>
+    </main>
+</body>
+</html>

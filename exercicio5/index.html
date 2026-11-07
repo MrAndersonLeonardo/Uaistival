@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configura o documento e vincula a folha de estilos externa. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uaistival | Divulgação</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho do evento e menu para acessar as cinco páginas. -->
+    <header id="inicio">
+        <h1>Uaistival</h1>
+        <nav aria-label="Navegação principal">
+            <a href="../exercicio1/index.html">Início</a>
+            <a href="../exercicio2/index.html">Cadastro</a>
+            <a href="../exercicio3/index.html">Cardápio</a>
+            <a href="../exercicio4/index.html">Galeria</a>
+            <a href="index.html" aria-current="page">Evento</a>
+        </nav>
+    </header>
+
+    <!-- apresentação, programação, orientações e inscrição do evento. -->
+    <main>
+        <!-- Informa o tema, a data, o local e a proposta do festival. -->
+        <section id="apresentacao">
+            <h2>UAISTIVAL — Minas Gerais de braços abertos!</h2>
+            <p><strong>Prepare-se para viver uma experiência que vai entrar para a história!</strong></p>
+            <p>O UAISTIVAL chega com a proposta de reunir pessoas de todos os cantos do Brasil e do mundo em uma grande celebração da cultura, da tradição e da hospitalidade mineira.</p>
+            <p><strong>Data:</strong> de 2 a 6 de dezembro, das 18h à meia-noite.</p>
+            <p><strong>Local:</strong> Parque De Exposições JK; Sete Lagoas, Minas Gerais.</p>
+            <p>Minas Gerais será palco de uma experiência única, com atrações internacionais e grandes nomes da música brasileira, reunindo diferentes ritmos, culturas e gerações em uma programação especial para todos os públicos.</p>
+            <p>E, claro, não poderia faltar aquilo que Minas tem de melhor! Uma verdadeira viagem pelos sabores da nossa terra, com muita gastronomia típica, pão de queijo, feijão tropeiro e diversas outras delícias que carregam a essência da cozinha mineira.</p>
+            <p>Serão cinco dias de muita música, cultura, entretenimento, tradição e experiências inesquecíveis. Um encontro de sotaques, histórias e pessoas, celebrando a riqueza cultural de Minas Gerais e mostrando ao Brasil e ao mundo o jeito acolhedor, alegre e autêntico de ser mineiro.</p>
+            <p>Mais do que um evento, o UAISTIVAL será uma grande celebração das nossas raízes, dos nossos costumes e da diversidade que nos une. Um espaço para compartilhar experiências, descobrir novos sabores e viver momentos especiais ao lado de pessoas de todos os lugares.</p>
+            <p>Acesse diretamente a <a href="#programacao">programação</a>, as <a href="#informacoes">informações importantes</a> ou o formulário de <a href="#inscricao">inscrição</a>.</p>
+        </section>
+
+        <!-- Apresenta atividades, horários e responsáveis sugeridos. -->
+        <section id="programacao">
+            <h2>Programação</h2>
+            <p>A programação abaixo é uma sugestão para a atividade. As atrações internacionais, os artistas e os responsáveis serão divulgados pela organização.</p>
+            <div class="rolagem">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Atividade</th>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Responsável</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Abertura e boas-vindas</td><td>18h</td><td>Equipe organizadora</td></tr>
+                        <tr><td>Encontro de sabores mineiros</td><td>20h</td><td>Equipe de gastronomia</td></tr>
+                        <tr><td>Apresentação de música regional</td><td>21h</td><td>Equipe cultural</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Lista regras e orientações para os participantes. -->
+        <section id="informacoes">
+            <h2>Informações importantes</h2>
+            <ul>
+                <li>Não é permitida a entrada com bebidas ou alimentos.</li>
+                <li>Ambulantes precisam de autorização da organização.</li>
+                <li>Não é permitida a entrada com objetos perfurantes.</li>
+            </ul>
+        </section>
+
+        <!-- Formulário de efeitwe só para validar os dados no navegador. -->
+        <section id="inscricao">
+            <h2>Inscrição</h2>
+            <p>Preencha seus dados para demonstrar interesse. A validação HTML acontece no navegador; a validação no servidor ocorre após o envio. Este formulário apenas valida os campos no navegador e não envia nem armazena as informações.</p>
+            <form>
+                <!-- Identificação e preferências da pessoa que vai participar do evento. -->
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="data">Dia de interesse</label>
+                <select id="data" name="data" required>
+                    <option value="">Selecione</option>
+                    <option value="2">2 de dezembro</option>
+                    <option value="3">3 de dezembro</option>
+                    <option value="4">4 de dezembro</option>
+                    <option value="5">5 de dezembro</option>
+                    <option value="6">6 de dezembro</option>
+                </select>
+
+                <fieldset>
+                    <!-- Registra se a pessoa pretende levar acompanhante. -->
+                    <legend>Acompanhante</legend>
+                    <label><input type="radio" name="acompanhante" value="sim" required> Sim</label>
+                    <label><input type="radio" name="acompanhante" value="nao"> Não</label>
+                </fieldset>
+
+                <!-- Valida os campos obrigatórios no navegador. -->
+                <button type="submit">Validar interesse</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Link para retornar à apresentação do evento só para não ficar vazio mesmo :P -->
+    <footer>
+        <p><a href="#apresentacao">Voltar à apresentação</a></p>
+    </footer>
+</body>
+</html>
