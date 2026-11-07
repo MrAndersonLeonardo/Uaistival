@@ -33,3 +33,4 @@ Créditos as linhas de código
 Anderson
 Créditos aos textos
 Kayky
+Créditos para Copilot que adicionou o site ao Github
